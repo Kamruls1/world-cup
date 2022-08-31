@@ -1,0 +1,344 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ----------------banner style start------------------ */
+.banner {
+    display: flex;
+    background-color: rgb(54, 54, 54);
+    margin: 100px;
+    padding: 20px 50px 0 80px;
+    border-radius: 20px;
+}
+
+.player {
+    width: 50%;
+}
+
+.introduce {
+    color: white;
+}
+
+h1 {
+    font-size: 70px;
+    margin-bottom: 0;
+}
+
+
+.player button {
+    background-color: red;
+    padding: 15px 20px;
+    font-weight: 700;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* animation */
+.player img {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.banner:hover img {
+    transform: translate(40px);
+}
+
+/* -----------------
+banner style end
+------------------- */
+
+
+/* --------------------grid style start ----------------- */
+.grid {
+    display: flex;
+    margin: 100px;
+}
+
+.link {
+    background-color: black;
+    height: 220px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.link a {
+    text-decoration: none;
+    background-color: white;
+    padding: 15px 45px;
+    color: black;
+    font-weight: 700;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 30px;
+    width: 150px;
+    text-align: center;
+}
+
+.link .blog {
+    background-color: red;
+    color: white;
+}
+
+.link a:hover {
+    background-color: red;
+    color: white;
+}
+
+.grid .Blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.Blogs .card {
+    background-color: rgb(250, 242, 229);
+    border-radius: 10px;
+}
+
+.Blogs .card .detail {
+    padding: 15px;
+}
+
+.card .detail p {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.grid .Blogs .card-img {
+    width: 100%;
+}
+
+.Blogs button {
+    padding: 5px 15px;
+    font-weight: 700;
+}
+
+.card .icon {
+    display: flex;
+}
+
+.icon .time {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+
+}
+
+.icon img {
+    margin-right: 10px;
+}
+
+.icon .chat {
+    display: flex;
+    align-items: center;
+}
+
+/* ----------------
+grid style end
+----------------- */
+
+/* extra-button style  */
+.extra-button {
+    text-align: center;
+    margin-bottom: 40px;
+    visibility: hidden;
+}
+
+.extra-button a {
+    text-decoration: none;
+    background-color: red;
+    padding: 15px 20px;
+    font-weight: 700;
+    color: white;
+    border-radius: 10px;
+}
+
+/* -----------------footer style start ----------------- */
+footer {
+    background-color: black;
+    padding: 80px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+}
+
+hr {
+    border-color: rgb(51, 51, 51);
+}
+
+.footer-link {
+    text-align: center;
+    padding: 40px;
+}
+
+.footer-link a {
+    text-decoration: none;
+    margin: 30px;
+    color: rgba(175, 174, 174, 0.822);
+}
+
+.social-icon {
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* -------------
+footer style end 
+--------------- */
+
+/*------------ media queries-------- */
+/* ---mobile devices--- */
+@media only screen and (max-width:688px) {
+    .banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .player {
+        width: 100%;
+    }
+
+    .player img {
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+
+    }
+
+    .player h1 {
+        font-size: 30px;
+    }
+
+    .banner .introduce {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .introduce p {
+        white-space: nowrap;
+        width: 250px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+
+    /* grid  */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px;
+        justify-content: center;
+        justify-items: center;
+        row-gap: 20px;
+    }
+
+    .link {
+        background: none;
+    }
+
+    .link a {
+        border: 1px solid black;
+    }
+
+    .grid .Blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin-left: 20px;
+    }
+
+    /* --footer -- */
+    .footer-link {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+
+    }
+
+    .footer-link a {
+        margin: 15px;
+    }
+}
+
+/* --for tablets-- */
+@media screen and (min-width:688px) and (max-width:992px) {
+    .banner {
+        margin: 50px;
+    }
+
+    .player img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .introduce {
+        margin-bottom: 40px;
+    }
+
+    .introduce p {
+        white-space: nowrap;
+        width: 250px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+
+    .player h1 {
+        font-size: 50px;
+    }
+
+    /* grid  */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px;
+        justify-content: center;
+    }
+
+    .link {
+        background: none;
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .link a {
+        border: 1px solid black;
+        margin: 10px;
+    }
+
+    .grid .Blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-left: 20px;
+    }
+
+    .extra-button {
+        visibility: visible;
+        margin: 40px;
+    }
+
+    .footer-link a {
+        margin: 10px;
+        padding: 10px;
+    }
+}
